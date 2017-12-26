@@ -1,0 +1,16 @@
+#general_situation{
+        height:120px;
+        width:100%;
+}
+
+#income{
+        background:#2e92f5;
+}
+#content{
+ /*       margin:10px 50px 10px 50px */
+}
+
+#sales_chart{
+        height:300px;
+        width:1050px;
+}

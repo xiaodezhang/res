@@ -1,0 +1,100 @@
+<html>
+<head>
+    {% load static %}
+    <meta charset = "utf-8">
+    <title>见闲思管理系统</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'statistics/css/bootstrap.min.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'statistics/css/style.css' %}" />
+    <script type="text/javascript" src="{% static 'statistics/js/jquery-3.2.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'statistics/js/echarts-all.js' %}"></script>
+    <script type="text/javascript" src="{% static 'statistics/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'statistics/js/index.js' %}"></script>
+</head>
+<body>
+    <div class = "container">
+        <nav class = "navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">见闲思管理系统</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class = "active"><a href = "#">首页</a></li>
+                        <li class = "active"><a href = "#">顾客</a></li>
+                        <li class = "active"><a href = "#">人效</a></li>
+                        <li class = "active"><a href = "#">营销</a></li>
+                        <li class = "active"><a href = "#">订单</a></li>
+                        <li class = "active"><a href = "#">库存</a></li>
+                        <li class = "active"><a href = "#">设置</a></li>
+                        <li class = "active"><a href = "#">报表</a></li>
+                        <li class = "active"><a href = "#">帮助</a></li>
+                        <li class = "active"><a href = "#">服务</a></li>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+        <div id = "content">
+        <p class = "text-left">今日营业概况</p>
+        <div id = "general_situation"> 
+            <div class = "row">
+                <div id = "income" class = "col-xs-3">
+                        <p>营业收入</p>
+                        <p>3笔</p>
+                        <p>￥100000</p>
+                </div>
+                <div id = "income_stored_value" class = "col-xs-2">
+                        <p>储值收入</p>
+                        <p>3笔</p>
+                        <p>￥100000</p>
+                </div>
+                <div id = "non_payment_order" class = "col-xs-2">
+                        <p>未支付订单</p>
+                        <p>39笔</p>
+                        <p>3410.04</p>
+                </div>
+                <div id = "discount_sum" class = "col-xs-2">
+                        <p>折扣金额</p>
+                        <p>2笔</p>
+                        <p>7552.50</p>
+                </div>
+            </div>
+            <p class = "text-left">销售概况</p>
+            <div class = "row">
+                    <div id = "sales_sum" class = "col-xs-3">
+                            <p>今日销售额</p>
+                            <p>￥104226.30</p>
+                            <p>昨日：￥4163.50</p>
+                            <p>上升：2403.27%</p>
+                            <p>今日销售单数</p>
+                            <p>37</p>
+                            <p>昨日：43笔</p>
+                            <p>下降：13.95%</p>
+                    </div>
+                    <div id = "sales_chart" class = "col-xs-9"></div>
+            </div>
+            <p class = "text-left">顾客概况</p>
+            <div class = "row">
+                    <div class = "col-xs-8">
+                    </div>
+                    <div class = "col-xs-3">
+                    </div>
+            </div>
+            <p class = "text-left">桌台概况</p>
+            <div class = "row">
+                    <div class = "col-xs-3">
+                    </div>
+                    <div class = "col-xs-8">
+                    </div>
+            </div>
+            <p class = "text-left">销售排行榜</p>
+            <div class = "row">
+                    <div class = "col-xs-6">
+                    </div>
+                    <div class = "col-xs-6">
+                    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

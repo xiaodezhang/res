@@ -1,0 +1,1 @@
+gvim %cd%\statistics\views.py %cd%\statistics\urls.py %cd%\statistics\templates\statistics\index.html %cd%\statistics\static\statistics\js\index.js %cd%\statistics\static\statistics\css\style.css %cd%\res\settings.py
