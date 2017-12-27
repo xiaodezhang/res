@@ -11,15 +11,14 @@
     <script type="text/javascript" src="{% static 'statistics/js/index.js' %}"></script>
 </head>
 <body>
-    <div class = "container">
-        <nav class = "navbar navbar-default" role="navigation">
+    <nav class = "navbar navbar-default" role="navigation">
         <div class="container-fluid">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">见闲思管理系统</a>
                 </div>
                 <div>
                     <ul class="nav navbar-nav">
-                        <li class = "active"><a href = "#">首页</a></li>
+                        <li class = "active"><a href = "#" >首页</a></li>
                         <li class = "active"><a href = "#">顾客</a></li>
                         <li class = "active"><a href = "#">人效</a></li>
                         <li class = "active"><a href = "#">营销</a></li>
@@ -32,68 +31,81 @@
                     </ul>
                 </div>
         </div>
-        </nav>
-        <div id = "content">
-        <p class = "text-left">今日营业概况</p>
-        <div id = "general_situation"> 
-            <div class = "row">
-                <div id = "income" class = "col-xs-3">
-                        <p>营业收入</p>
-                        <p>3笔</p>
-                        <p>￥100000</p>
+    </nav>
+
+    <div class = "container-res">
+        <div class = "row-fluid">
+                <div id = "content" class = "col-md-10">
+                        <p class = "text-left">今日营业概况</p>
+                        <div class = "row bg-c1 row-div">
+                             <div id = "income" class = "col-md-3 row-child">
+                                   <div class = "income_title text-c1">营业收入</div>
+                                   <p class = "text-c1">3笔</p>
+                                   <p class = "text-c3">￥100000</p>
+                             </div>
+                             <div id = "income_stored_value" class = "col-md-3 row-child">
+                                   <div class = "income_title">储值收入</div>
+                                   <p class = "text-c5">3笔</p>
+                                   <p class = "text-c2">￥100000</p>
+                             </div>
+                             <div id = "non_payment_order" class = "col-md-3 row-child">
+                                   <div class = "income_title">未支付订单</div>
+                                   <p class = "text-c5">39笔</p>
+                                   <p class = "text-c2">￥3410.04</p>
+                             </div>
+                             <div id = "discount_sum" class = "col-md-3 row-child">
+                                   <div class = "income_title">折扣金额</div>
+                                   <p class = "text-c5">2笔</p>
+                                   <p class = "text-c2">￥7552.50</p>
+                             </div>
+                        </div>
+
+                        <p class = "text-left">销售概况</p>
+                        <div class = "row bg-c1 row-div">
+                            <div id = "sales_sum" class = "col-md-4">
+                                 <p>今日销售额</p>
+                                 <p class = "text-c2">￥104226.30</p>
+                                 <p class = "text-c5">昨日：￥4163.50</p>
+                                 <p class = "text-c5">上升：2403.27%</p>
+                                 <p>今日销售单数</p>
+                                 <p class = "text-c6">37</p>
+                                 <p class = "text-c5">昨日：43笔</p>
+                                 <p class = "text-c5">下降：13.95%</p>
+                            </div>
+                            <div id = "sales_chart" class = "col-md-8"></div>
+                            </div>
+
+                            <p class = "text-left">顾客概况</p>
+                            <div class = "row bg-c1 row-div">
+                                    <div class = "col-md-8">
+                                    </div>
+                                    <div class = "col-md-3">
+                                    </div>
+                            </div>
+                            <p class = "text-left">桌台概况</p>
+                            <div class = "row bg-c1 row-div">
+                                    <div class = "col-md-3">
+                                    </div>
+                                    <div class = "col-md-8">
+                                    </div>
+                            </div>
+
+                            <p class = "text-left">销售排行榜</p>
+                            <div class = "row bg-c1 row-div">
+                                    <div class = "col-md-6">
+                                    </div>
+                                    <div class = "col-md-6">
+                                    </div>
+                     </div>
                 </div>
-                <div id = "income_stored_value" class = "col-xs-2">
-                        <p>储值收入</p>
-                        <p>3笔</p>
-                        <p>￥100000</p>
+               <div class="col-md-2 bg-c1" id="sidebar">
+                    <h2>Sidebar</h2>
+                    <ul class="nav nav-tabs nav-stacked">
+                        <li><a href='#'>Another Link 1</a></li>
+                        <li><a href='#'>Another Link 2</a></li>
+                        <li><a href='#'>Another Link 3</a></li>
+                    </ul>    
                 </div>
-                <div id = "non_payment_order" class = "col-xs-2">
-                        <p>未支付订单</p>
-                        <p>39笔</p>
-                        <p>3410.04</p>
-                </div>
-                <div id = "discount_sum" class = "col-xs-2">
-                        <p>折扣金额</p>
-                        <p>2笔</p>
-                        <p>7552.50</p>
-                </div>
-            </div>
-            <p class = "text-left">销售概况</p>
-            <div class = "row">
-                    <div id = "sales_sum" class = "col-xs-3">
-                            <p>今日销售额</p>
-                            <p>￥104226.30</p>
-                            <p>昨日：￥4163.50</p>
-                            <p>上升：2403.27%</p>
-                            <p>今日销售单数</p>
-                            <p>37</p>
-                            <p>昨日：43笔</p>
-                            <p>下降：13.95%</p>
-                    </div>
-                    <div id = "sales_chart" class = "col-xs-9"></div>
-            </div>
-            <p class = "text-left">顾客概况</p>
-            <div class = "row">
-                    <div class = "col-xs-8">
-                    </div>
-                    <div class = "col-xs-3">
-                    </div>
-            </div>
-            <p class = "text-left">桌台概况</p>
-            <div class = "row">
-                    <div class = "col-xs-3">
-                    </div>
-                    <div class = "col-xs-8">
-                    </div>
-            </div>
-            <p class = "text-left">销售排行榜</p>
-            <div class = "row">
-                    <div class = "col-xs-6">
-                    </div>
-                    <div class = "col-xs-6">
-                    </div>
-            </div>
-        </div>
         </div>
     </div>
 </body>
